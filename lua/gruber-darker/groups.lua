@@ -6,7 +6,8 @@ M.colors = {
 	fg_2 = "#f5f5f5",
 	white = "#ffffff",
 	black = "#000000",
-	bg_m1 = "#101010",
+	gray = "#505050",
+	bg_m1 = "#808080",
 	bg = "#080808",
 	bg_1 = "#181818",
 	bg_2 = "#453d41",
@@ -58,7 +59,7 @@ M.setup = function()
 		Float = { fg = colors.white },
 		Character = { fg = colors.green },
 
-		Identifier = { fg = colors.fg_1 },
+		Identifier = { fg = colors.gray },
 		Operator = { link = "Normal" },
 		Title = { fg = colors.niagara },
 
