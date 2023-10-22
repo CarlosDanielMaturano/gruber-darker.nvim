@@ -59,7 +59,7 @@ M.setup = function()
 		Float = { fg = colors.white },
 		Character = { fg = colors.green },
 
-		Identifier = { fg = colors.gray },
+		Identifier = { fg = colors.fg },
 		Operator = { link = "Normal" },
 		Title = { fg = colors.niagara },
 
