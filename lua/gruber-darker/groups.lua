@@ -35,7 +35,7 @@ M.setup = function()
 
 	local groups = {
 
-		Normal = { bg = colors.bg, fg = colors.fg },
+		Normal = { fg = colors.fg },
 		NormalFloat = { link = "Normal" },
 		NonText = { link = "Normal" },
 
