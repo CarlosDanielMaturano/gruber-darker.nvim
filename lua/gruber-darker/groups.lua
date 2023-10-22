@@ -35,9 +35,8 @@ M.setup = function()
 
 	local groups = {
 
-		Normal = { fg = colors.fg },
+		Normal = { fg = colors.fg, bg = colors.bg },
 		NormalFloat = { link = "Normal" },
-		NonText = { link = "Normal" },
 
 		FloatBorder = { fg = colors.fg },
 
@@ -72,7 +71,7 @@ M.setup = function()
 
 		Function = { fg = colors.niagara },
 
-		PreProc = { fg = colors.quartz },
+		PreProc = { fg = colors.yellow },
 		Include = { link = "PreProc" },
 		Define = { link = "PreProc" },
 		Macro = { link = "PreProc" },
@@ -93,7 +92,6 @@ M.setup = function()
 		Error = { fg = colors.red_1 },
 		ErrorMsg = { fg = colors.red },
 		WarningMsg = { fg = colors.red },
-
 		netrwBak = { fg = colors.quartz },
 		Directory = { fg = colors.niagara },
 		netrwDir = { fg = colors.niagara },
@@ -109,9 +107,12 @@ M.setup = function()
 		PmenuThumb = { link = "Pmenu" },
 
 		Search = { bg = colors.fg_2, fg = colors.black },
-		IncSearch = { bg = colors.fg_1, fg = colors.niagara_1 },
+		IncSearch = { bg = colors.fg_2, fg = colors.niagara_1 },
 
 		Visual = { bg = colors.bg_3 },
+		VisualNC = { fg = colors.white, bg = colors.bg_3 },
+		NonText = { fg = colors.white },
+		--TabLineSel = { bg = colors.bg_3 },
 
 		Question = { fg = colors.fg },
 		MoreMsg = { fg = colors.fg },
@@ -155,18 +156,18 @@ M.setup = function()
 		markdownBlockquote = { fg = colors.brown },
 		markdownUrl = { fg = colors.niagara, underline = config.underline },
 
-		-- telescope.nvim
-		-- TelescopeNormal = { },
-		-- TelescopeSelection = { },
-		-- TelescopeSelectionCaret = { },
-		-- TelescopeMultiSelection = { },
-		-- TelescopeMatching = { },
-		-- TelescopePrompt = { },
-		-- TelescopePromptPrefix = { },
-		-- TelescopeBorder = { },
-		-- TelescopePromptBorder = { },
-		-- TelescopeResultsBorder = { },
-		-- TelescopePreviewBorder = { },
+		-- Telescope
+
+		TelescopeMatching = { fg = colors.yellow },
+
+		["@constructor"] = { fg = colors.quartz },
+		["@tag.delimiter"] = { fg = colors.quartz },
+		["@tag.attribute"] = { fg = colors.niagara },
+		["@property.css"] = { fg = colors.niagara },
+		["@type"] = { fg = colors.yellow },
+		["@type.javascript"] = { fg = colors.quartz },
+		["@storageclass.rust"] = { fg = colors.yellow },
+		["@type.rust"] = { fg = colors.niagara },
 	}
 	return groups
 end

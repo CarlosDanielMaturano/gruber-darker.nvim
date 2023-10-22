@@ -1,10 +1,13 @@
 # gruber-darker.nvim
 
+This repository is a fork from (https://github.com/thimc/gruber-darker.nvim)
+I just made some changes that i like
+
 Gruber darker theme for Neovim written entirely in lua.
 
 Based on [Alexey's version of the gruber darker theme](https://github.com/rexim/gruber-darker-theme).
 
-![Screenshot. with transparent true](https://github.com/thimc/gruber-darker.nvim/blob/main/screenshot.png)
+![Screenshot. ](https://raw.githubusercontent.com/CarlosDanielMaturano/gruber-darker.nvim/main/screenshot.png)
 
 ## Installation
 
@@ -15,9 +18,13 @@ Based on [Alexey's version of the gruber darker theme](https://github.com/rexim/
 return require('packer').startup(function(use)
   use {'wbthomason/packer.nvim'}
 
+
   use {'thimc/gruber-darker.nvim'}
 end)
+
+
 ```
+
 </details>
 
 <details>
@@ -37,6 +44,7 @@ end)
   end,
 }
 ```
+
 </details>
 
 ## Supported plugins
@@ -45,6 +53,5 @@ I don't use all that many plugins, instead I rely on the built in commands
 such as netrw, vimdiff and spellcheck. So I haven't really extended the themes
 support but I can confirm that popular plugins such as treesitter, telescope
 and fugitive work fine.
-
 
 Pull requests are more than welcome!
