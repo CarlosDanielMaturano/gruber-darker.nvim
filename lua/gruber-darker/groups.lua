@@ -146,6 +146,11 @@ M.setup = function()
 		htmlLink = { fg = colors.niagara, underline = config.underline },
 		htmlTag = { fg = colors.quartz },
 		htmlTagName = { fg = colors.fg },
+		["@tag.delimiter"] = { fg = colors.quartz },
+		["@tag.attribute"] = { fg = colors.niagara },
+
+		-- css
+		["@property.css"] = { fg = colors.niagara },
 
 		-- markdown
 		markdownH1 = { fg = colors.red_1 },
@@ -161,11 +166,13 @@ M.setup = function()
 		TelescopeMatching = { fg = colors.yellow },
 
 		["@constructor"] = { fg = colors.quartz },
-		["@tag.delimiter"] = { fg = colors.quartz },
-		["@tag.attribute"] = { fg = colors.niagara },
-		["@property.css"] = { fg = colors.niagara },
+
 		["@type"] = { fg = colors.yellow },
+		-- Javascript/Typescript
 		["@type.javascript"] = { fg = colors.quartz },
+		["@type.tsx"] = { fg = colors.quartz },
+
+		-- Rust
 		["@storageclass.rust"] = { fg = colors.yellow },
 		["@type.rust"] = { fg = colors.niagara },
 	}
