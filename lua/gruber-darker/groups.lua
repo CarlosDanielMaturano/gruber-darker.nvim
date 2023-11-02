@@ -63,7 +63,7 @@ M.setup = function()
 		Title = { fg = colors.niagara },
 
 		Constant = { fg = colors.quartz },
-		Keyword = { fg = colors.yellow, bold = config.bold },
+		Keyword = { fg = colors.yellow, bold = false },
 		-- Statement = {},
 		-- Conditional = {},
 		-- Repeat = {},
@@ -71,14 +71,14 @@ M.setup = function()
 
 		Function = { fg = colors.niagara },
 
-		PreProc = { fg = colors.yellow },
+		PreProc = { fg = colors.yellow, bold = false },
 		Include = { link = "PreProc" },
 		Define = { link = "PreProc" },
 		Macro = { link = "PreProc" },
 		Precondit = { link = "PreProc" },
 
 		Type = { fg = colors.quartz },
-		Typedef = { fg = colors.yellow },
+		Typedef = { fg = colors.yellow, bold = false },
 		-- Structure = { },
 		-- StorageClass = { },
 
@@ -167,13 +167,13 @@ M.setup = function()
 
 		["@constructor"] = { fg = colors.quartz },
 
-		["@type"] = { fg = colors.yellow },
+		["@type"] = { fg = colors.yellow, bold = false },
 		-- Javascript/Typescript
 		["@type.javascript"] = { fg = colors.quartz },
 		["@type.tsx"] = { fg = colors.quartz },
 
 		-- Rust
-		["@storageclass.rust"] = { fg = colors.yellow },
+		["@storageclass.rust"] = { fg = colors.yellow, bold = false },
 		["@type.rust"] = { fg = colors.niagara },
 	}
 	return groups
